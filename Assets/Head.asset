@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Head
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: PlayerBlink
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: EyesOpen
+      m_Hash: 0
+      m_Sprite: {fileID: -3394760965050992426, guid: 62b85a0a94639194ba534aba25b2a10c,
+        type: 3}
+    - m_Name: EyesClosed
+      m_Hash: 0
+      m_Sprite: {fileID: -3719188535466153125, guid: 62b85a0a94639194ba534aba25b2a10c,
+        type: 3}

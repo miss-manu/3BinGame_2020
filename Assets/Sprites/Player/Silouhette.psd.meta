@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 36302a00b3a669f4fbafa83c73b59587
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8350805705235550940
+    second: Head
+  - first:
+      213: -3388906965678292455
+    second: LH-Arm
+  - first:
+      213: 2431049637081178986
+    second: LH-Hand
+  - first:
+      213: -8183697381453819733
+    second: Torso
+  - first:
+      213: -8040885847052034104
+    second: RH-Arm
+  - first:
+      213: 3785399714963346795
+    second: RH-Hand
+  - first:
+      213: 8482659892910822739
+    second: LH-LLeg
+  - first:
+      213: 2577037114018056252
+    second: LH-ULeg
+  - first:
+      213: -2980284890444531358
+    second: RH-ULeg
+  - first:
+      213: 2194770945353481092
+    second: RH-LLeg
+  - first:
+      213: 8376225768193469351
+    second: LH-Foot
+  - first:
+      213: 8557521633438368847
+    second: RH-Foot
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1062
+        width: 237
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49999988, y: 0.04771029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d212f947afb1c80800000000000000
+      internalID: -8350805705235550940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LH-Arm
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1062
+        width: 154
+        height: 205
+      alignment: 9
+      pivot: {x: 0.9704986, y: 0.9859911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91206e5e11f28f0d0800000000000000
+      internalID: -3388906965678292455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LH-Hand
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1084
+        width: 44
+        height: 81
+      alignment: 9
+      pivot: {x: 0.69998586, y: 0.9789888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63e091c3c2dcb120800000000000000
+      internalID: 2431049637081178986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torso
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 511
+        width: 237
+        height: 478
+      alignment: 9
+      pivot: {x: 0.47452286, y: 0.019986205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba09625379aad6e80800000000000000
+      internalID: -8183697381453819733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH-Arm
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 762
+        width: 116
+        height: 228
+      alignment: 9
+      pivot: {x: 0.13563327, y: 0.97668993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf5ffeace8096090800000000000000
+      internalID: -8040885847052034104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH-Hand
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 761
+        width: 52
+        height: 76
+      alignment: 9
+      pivot: {x: 0.20971093, y: 0.8972425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65514f1cf0788430800000000000000
+      internalID: 3785399714963346795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LH-LLeg
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 223
+        width: 67
+        height: 194
+      alignment: 9
+      pivot: {x: 0.7253018, y: 0.9512993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3551763ca3678b570800000000000000
+      internalID: 8482659892910822739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LH-ULeg
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 188
+        width: 85
+        height: 251
+      alignment: 9
+      pivot: {x: 0.42896405, y: 0.9450371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c384b0af99973c320800000000000000
+      internalID: 2577037114018056252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH-ULeg
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 201
+        width: 118
+        height: 238
+      alignment: 9
+      pivot: {x: 0.09063979, y: 0.969346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269f69faea6e3a6d0800000000000000
+      internalID: -2980284890444531358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH-LLeg
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 188
+        width: 66
+        height: 195
+      alignment: 9
+      pivot: {x: 0.4085157, y: 0.9489851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b7421eb84657e10800000000000000
+      internalID: 2194770945353481092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LH-Foot
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 73
+        width: 106
+        height: 35
+      alignment: 9
+      pivot: {x: 0.15822327, y: 0.58626014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab25aff4f45e3470800000000000000
+      internalID: 8376225768193469351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH-Foot
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 71
+        width: 106
+        height: 36
+      alignment: 9
+      pivot: {x: 0.101259336, y: 0.58386314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4480def59c62c670800000000000000
+      internalID: 8557521633438368847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
