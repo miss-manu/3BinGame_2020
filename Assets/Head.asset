@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Labels:
   - m_Name: PlayerBlink
-    m_Hash: 0
+    m_Hash: -1973807834
     m_CategoryList:
     - m_Name: EyesOpen
-      m_Hash: 0
+      m_Hash: -1092456088
       m_Sprite: {fileID: -3394760965050992426, guid: 62b85a0a94639194ba534aba25b2a10c,
         type: 3}
     - m_Name: EyesClosed
-      m_Hash: 0
+      m_Hash: 809196548
       m_Sprite: {fileID: -3719188535466153125, guid: 62b85a0a94639194ba534aba25b2a10c,
         type: 3}
