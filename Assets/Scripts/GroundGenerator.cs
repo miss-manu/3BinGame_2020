@@ -52,10 +52,10 @@ public class GroundGenerator : MonoBehaviour
         // Otherwise, tell Unity that when we get a coloured pixel, we want to spawn a prefab
         foreach (ColourToPrefab colourMapping in colourMappings)
         {
-            if (colourMapping.colour.Equals(pixelColour))
-            {
-                Vector2 position = new Vector2(x, y);
-                Instantiate (colourMapping.prefab, position, Quaternion.identity, transform);
+            if (colourMapping.colour.Equals(pixelColour))                                       // If a colour in the array matches 
+            {                                                                                   // a colour in the map
+                Vector2 position = new Vector2(x, y);                                           // Save the location of that pixel
+                Instantiate (colourMapping.prefab, position, Quaternion.identity, transform);   // And put a prefab in its place
             }
         }
     }

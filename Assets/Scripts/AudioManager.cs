@@ -1,6 +1,8 @@
-﻿using UnityEngine.Audio;
-using System.Collections;
-using System.Collections.Generic;
+﻿/*
+    SCRIPT TO ADD SOUND AND AUDIO FX TO GAME
+    Tutorial: https://www.youtube.com/watch?v=8pFlnyfRfRc by Alexander Zotov
+*/
+
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -16,7 +18,7 @@ public class AudioManager : MonoBehaviour
     {
 
         collectSound = Resources.Load<AudioClip>("CollectCoin");
-        jumpSound = Resources.Load<AudioClip>("Jump");
+        jumpSound = Resources.Load<AudioClip>("Bounce");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -29,7 +31,7 @@ public class AudioManager : MonoBehaviour
             case "CollectCoin":
                 audioSrc.PlayOneShot(collectSound);
                 break;
-            case "Jump":
+            case "Bounce":
                 audioSrc.PlayOneShot(jumpSound);
                 break;
         }

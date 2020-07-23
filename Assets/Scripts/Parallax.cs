@@ -1,5 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/*
+    SCRIPT TO CREATE A DYNAMIC LEVEL BACKGROUND (Parallax Scrolling)
+    Tutorial: https://www.youtube.com/watch?v=zit45k6CUMk by Dani
+    
+*/
+
 using UnityEngine;
 
 public class Parallax : MonoBehaviour

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //==========================================
 // The Main Player Script
@@ -19,11 +20,19 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded = false;                // To hold the value returned from 2D overlapcircle
     public float checkRadius;                       // Radius around the check point, to ensure it is touching the ground
     public LayerMask whatIsGround;                  // To check if the player is on the 'ground'
+    private bool isJumping = false;                  // To check for jump input
+
+    // Player properties to jump longer, while pressing button
+    //private bool longJump = false;                   // Check how long the player jumps
+    //public float jumpTime;                          // To determine the max time a player can jump
+    //private float jumpTimeCounter;                  // Countdown how long the player has pressed jump
 
     // Component references
     private Rigidbody2D rb2d;                       // Value to represent our rigidbody
     private Animator anim;                          // Value to represent our Animator
 
+    // UI references
+    public Text scoreText;                          // 
 
     // Start is called before the first frame update
     void Start()
@@ -34,29 +43,70 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void FixedUpdate()
+    private void Update()
+    {
+        //==========================================
+        // INPUT SCRIPTS
+        //==========================================
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            isJumping = true;                       // Moved user input here (from fixed update) to avoid loss of input on key presses
+        }
+
+        //  Attempting to allow the player to hold jump key and jump higher
+        //  Using this tutorial: https://www.youtube.com/watch?v=j111eKN8sJw
+        /*if (Input.GetButton("Jump") && isJumping)
+        {
+            longJump = true;
+        }
+
+            if (Input.GetButtonUp("Jump"))
+        {
+            isJumping = false;
+        }*/
+    }
+
+    private void FixedUpdate()
     {
         //==========================================
         // MOVEMENT SCRIPTS
         //==========================================
 
-        // Check first to see if the player is grounded, can only jump from ground layer
+        // Check first to see if the player is grounded, as can only jump from ground layer
         isGrounded = Physics2D.OverlapCircle(groundPos.position, checkRadius, whatIsGround);
 
-        // Jump player
-        if (isGrounded == true && Input.GetButtonDown("Jump"))
+        // If so, jump player
+        if (isGrounded && isJumping)
         {
-            // Play sound when the player jumps
-            AudioManager.PlaySound("Jump");
+            AudioManager.PlaySound("Bounce");         // Play sound when the player jumps
 
-            rb2d.velocity = Vector2.up * jumpForce;                      
+            rb2d.velocity = Vector2.up * jumpForce;
             //rb2d.AddForce(new Vector2(rb2d.velocity.x, jumpForce)); 
+
+
+            /*if (longJump)
+            {
+                jumpTimeCounter = jumpTime;
+
+                if (jumpTimeCounter > 0)
+                {
+                    rb2d.velocity = Vector2.up * jumpForce;
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                else
+                {
+                    longJump = false;
+                }
+            }*/
+
+            isJumping = false;                      // Restore until jump is requested (through update function)
         }
 
         // Get input value of horizontal axes to find if player is moving left (-1) or right (1)
         move = Input.GetAxis("Horizontal");     
         
-        if (move < 0)       // If player is moving left
+        if (move < 0)           // If player is moving left
         {
             rb2d.velocity = new Vector2(move * speed, rb2d.velocity.y); // Move the player on x axis, keep y axis at same value
             transform.eulerAngles = new Vector3(0, 180, 0);             // Euler angles to change the sprites rotation position
@@ -77,7 +127,7 @@ public class PlayerController : MonoBehaviour
         // ANIMATOR PARAMETERS
         //==========================================
         anim.SetBool("Ground", isGrounded);                   // Player idle
-        anim.SetFloat("vSpeed", rb2d.velocity.y);             // Player jump
+        anim.SetFloat("vSpeed", rb2d.velocity.y);             // Player jump 
         anim.SetFloat("Speed", Mathf.Abs(move));              // Player run
                                                                 
     }
@@ -91,13 +141,13 @@ public class PlayerController : MonoBehaviour
     }*/
 
     //==========================================
-    // TRIGGER SCRIPTS
+    // TRIGGER | COLLISION SCRIPTS
     //==========================================
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Allow Player to collect the Fruit items
-        if (collision.CompareTag("FruitCollectable"))
+        // COLLECTING ITEMS FOR GREEN BIN                               // Tutorial from: https://www.youtube.com/watch?v=bvlPtAErGp0
+        if (collision.CompareTag("FruitCollectable"))                   // Check to see what the item is tagged as
         {
             // Play sound when the fruit has been collected
             AudioManager.PlaySound("CollectCoin");
@@ -105,7 +155,7 @@ public class PlayerController : MonoBehaviour
             // Define the type of item that has been collected
             string itemType = collision.gameObject.GetComponent<GreenBinCollectable>().itemType;
 
-            // Save the collected fruit items into the list
+            // Save the collected fruit items into a list
             greenBinInventory.Add(itemType);
 
             print("We have collected a: " + itemType);                  // What item was collected?
