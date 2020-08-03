@@ -217,7 +217,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -311,5 +311,5 @@ SortingGroup:
   m_GameObject: {fileID: 5783766410771123437}
   m_Enabled: 1
   m_SortingLayerID: -1625364421
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 12

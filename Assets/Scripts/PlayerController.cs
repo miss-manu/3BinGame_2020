@@ -73,6 +73,9 @@ public class PlayerController : MonoBehaviour
         // MOVEMENT SCRIPTS
         //==========================================
 
+        //==========================================
+        // JUMP MOVE
+
         // Check first to see if the player is grounded, as can only jump from ground layer
         isGrounded = Physics2D.OverlapCircle(groundPos.position, checkRadius, whatIsGround);
 
@@ -103,6 +106,9 @@ public class PlayerController : MonoBehaviour
             isJumping = false;                      // Restore until jump is requested (through update function)
         }
 
+        //==========================================
+        // LEFT & RIGHT MOVE
+        
         // Get input value of horizontal axes to find if player is moving left (-1) or right (1)
         move = Input.GetAxis("Horizontal");     
         
@@ -121,7 +127,12 @@ public class PlayerController : MonoBehaviour
             //transform.localScale = new Vector2(0.25f, 0.25f);           // Hard coded xy value, based on the size of the sprite
             //Flip();
         }
-        
+
+        //==========================================
+        // CROUCHING MOVE
+        // Tutorial from Brackeys: https://www.youtube.com/watch?v=J17U6IJR_XA
+
+
 
         //==========================================
         // ANIMATOR PARAMETERS
